@@ -1,0 +1,44 @@
+config:  #共用参数c
+   #  公共信息
+   code: '555666'  # 验证码
+   name: '赵标'
+   cardNo: '372922198012224773'
+   web_mobile: '13366668888'  # 后台管理员手机号
+   author: '吴可凡'
+
+env: "dev"   # 脚本默认执行环境
+
+
+host_url:
+   #  域名管理
+   routines_aws_test: ""
+   wenlai_aws_test: "https://www.baidu.com"
+   routines_dev: "https://www.baidu.com"
+   wenlai_dev: "https://www.baidu.com"
+
+
+
+
+
+#  数据库链接信息管理
+yidudb_beta:
+   detail: florence、mb_tob等库
+   host:
+   admin:
+   password:
+   port:
+   db:
+
+yidudb_pre:
+   detail:
+   host:
+   admin:
+   password:
+   port:
+   db:
+
+
+#proxies:
+#   http: 'http://proxy-idc2.intra.yiducloud.cn:80'
+#   https: 'http://proxy-idc2.intra.yiducloud.cn:80'
+

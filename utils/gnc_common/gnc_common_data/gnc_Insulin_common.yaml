@@ -1,0 +1,35 @@
+# 胰岛素公共方法参数
+
+# 创建basal胰岛素用户接口
+add_basal_insulin_url: "/hc/aceso/hc/basal/insulin/add"
+# 参数
+add_basal_insulin_data: {
+    params_data1: {
+        "patientProfile":{
+            "firstName":"testdev1003@qq.com",
+            "lastName":"1",
+            "phone":"12311111",
+            "email":"testdev1003@qq.com",
+            "birthDate":"2000-01-01",
+            "gender":"MALE",
+            "meetInsulinEntry":1,
+            "trainedUseInsulin":1,
+            "weight":150.3,
+            "height":60,
+            "hypoglycemiaClass":"NO"
+        },
+        "drugDosageVO":{
+            "drugFullName":"Lantus Insulin",
+            "performedFrequency":"once per day",
+            "drugDosage":10,
+            "administrationPeriod":"bedtime",
+            "administrationTime":"01:00:00"
+        }}
+}
+
+# 开启bolus胰岛素权限
+saveBolusInsulinCalculatorCfg_url: "/hc/aceso/hc/bolus/insulin/saveBolusInsulinCalculatorCfg"
+# 参数
+saveBolusInsulinCalculatorCfg_data: {
+    params_data1: { "userId": "99984843648409600","calSwitch": "on","insulinOnBoardSwitch": "on","trained": "yes" }
+}

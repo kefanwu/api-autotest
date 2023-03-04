@@ -1,0 +1,16 @@
+clock_record:
+  detail: routines app mockLogin
+  url: "/routines/habits/app/daily/task/clock_record/list"
+  method: POST
+  headers:
+    Content-Type: 'application/json'
+    referer: 'hal-test.halhealthpilot.cf'
+  payload: {
+    "pageNo": 0,
+    "pageSize": 10,
+    "templateId": 20090
+  }
+  expect_value:
+    data: {
+    "taskCode": "bloodGlucose"
+  }

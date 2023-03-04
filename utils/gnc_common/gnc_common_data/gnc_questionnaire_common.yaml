@@ -1,0 +1,249 @@
+# 问卷相关参数
+# 初筛问卷
+QuickQuizData: {
+                 "type": "screen",
+                 "name": "初筛问卷",
+                 "quizdata": "QuickQuiz_data",
+                 "status": "submit",
+}
+# 基础问卷
+HealthSurveyData: {
+                 "type": "archive",
+                 "name": "基础问卷",
+                 "quizdata": "HealthSurvey_data",
+                 "status": "submit",
+}
+# 运动饮食问卷
+ProgramSurveyData: {
+                 "type": "doHealth",
+                 "name": "运动饮食问卷",
+                 "quizdata": "ProgramSurvey_data",
+                 "status": "submit",
+}
+# 量表接口
+ques_list_url:
+  get_crfid_url: "/pn/aceso/pn/plan/crf"
+  save_ques_url: "/pn/hygiea/patient/crf/save"
+  get_crf_content: "/pn/hygiea/patient/crf/detail"
+# 用户基础信息接口
+user_status_url: "/pn/aceso/pn/plan/status"
+# 查看问卷结果接口
+view_result_url: "/pn/aceso/pn/plan/view/result"
+# 指标打卡接口
+medical_add_url: "/pn/aceso/pn/medical/add"
+
+# 问卷和查看问卷结果参数对应字段
+quiz_result: {
+               "archive": "target",
+               "doHealth": "prescription",
+}
+
+# 初筛量表问卷参数
+QuickQuiz_data: [{
+            "questionId": "",
+            "title":"What is your date of birth?",
+            "answerData": "1980-01-01"
+        }, {
+            "answerData": "Male",
+            "title":"What is your birth gender?",
+            "questionId": ""
+        }, {
+            "answerData": "Type 2 Diabetes",
+            "title":"Which type of diabetes are you diagnosed with?",
+            "questionId": ""
+        }, {
+            "answerData": "[\"\"]",
+            "title":"Are you currently diagnosed with any of the following diseases?（choose all that apply）",
+            "questionId": ""
+        }, {
+            "answerData": "No",
+            "title":"Have you ever lost consciousness due to low blood sugar or had more than two hypoglycemic incidents in last week (blood glucose below 70 mg/dL) ?",
+            "questionId": ""
+        }]
+# 基础量表问卷参数
+HealthSurvey_data: [{
+        "answerData": 66,
+        "questionId": "94423189555257344",
+        "title": "What is your height?",
+        "unit": "in",
+        "tipName": "height"
+    }, {
+        "answerData": "164.0",
+        "questionId": "94423193313353728",
+        "title": "What is your current weight?",
+        "unit": "lb",
+        "tipName": "weight"
+    }, {
+        "answerData": "37.0",
+        "questionId": "94423198145191936",
+        "title": "What is your most recent  waist circumference?",
+        "unit": "in",
+        "tipName": "waistline"
+    }, {
+        "answerData": "38.0",
+        "questionId": "94423202977030144",
+        "title": "What is  your most recent hip  circumference?",
+        "unit": "in",
+        "tipName": "hipline"
+    }, {
+        "answerData": "19",
+        "questionId": "94423207271997440",
+        "title": "What is your most recent body fat percentage?",
+        "unit": "%",
+        "tipName": "body fat percentage"
+    }, {
+        "answerData": "120,100",
+        "questionId": "98601062621093888",
+        "title": "What is your most recent blood pressure?",
+        "unit": "mmHg",
+        "tipName": "systolic pressure,diastolic pressure"
+    }, {
+        "answerData": "79",
+        "questionId": "94423220156899328",
+        "title": "What is your resting heart rate?",
+        "unit": "bpm",
+        "tipName": "resting heart rate"
+    }, {
+        "questionId": "94423224451866624",
+        "title": "What year were you first diagnosed with your diabetes?",
+        "answerData": 2022
+    }, {
+        "answerData": "150",
+        "questionId": "94423228209963008",
+        "title": "What is your most recent fasting blood glucose?",
+        "unit": "mg/dL",
+        "tipName": "blood glucose"
+    }, {
+        "answerData": "200",
+        "questionId": "94423232504930304",
+        "title": "What is your most recent blood glucose level 2 hours after breakfast?",
+        "unit": "mg/dL",
+        "tipName": "blood glucose"
+    }, {
+        "answerData": "8",
+        "questionId": "94423236799897600",
+        "title": "What is your most recent HbA1C? (Within the past three months)",
+        "unit": "%",
+        "tipName": "AIC"
+    }, {
+        "answerData": "[\"Novolog Insulin\"]",
+        "title": "What diabetes medication(s) are you taking?",
+        "questionId": "94423240557993984"
+    }, {
+        "answerData": "Man",
+        "questionId": "94423245389832192",
+        "title": "How would you like to be addressed?",
+    },{
+        "answerData": "White",
+        "questionId": "94423250221670400",
+        "title": "What’s your ethnicity?",
+}]
+# 运动量表 参数
+ProgramSurvey_data: [{
+        "answerData": 1,
+        "questionId": "94423260959088640",
+        "title": "During the last 7 days, on how many days did you perform vigorous physical activities like heavy lifting, digging, aerobics, or fast bicycling? ",
+        "unit": "day"
+    }, {
+        "answerData": 60,
+        "questionId": "94423266864668672",
+        "title": "How long do you usually spend each time when you perform vigorous physical activities ?",
+        "unit": "minute"
+    }, {
+        "answerData": 1,
+        "questionId": "94423279212699648",
+        "title": "How many days a week do you usually spend doing moderate physical activities?",
+        "unit": "day"
+    }, {
+        "answerData": 120,
+        "questionId": "94423283507666944",
+        "title": "How long do you usually spend each time when you perform moderate physical activities?",
+        "unit": "minute"
+    }, {
+        "answerData": 2,
+        "questionId": "94423292097601536",
+        "title": "During the last 7 days, on how many days did you walk continuously for at least 10 minutes ?",
+        "unit": "day"
+    }, {
+        "answerData": 120,
+        "questionId": "94423295855697920",
+        "title": "How much time do you usually spend walking on a normal day?",
+        "unit": "minute"
+    }, {
+        "answerData": 60,
+        "questionId": "94423306593116160",
+        "title": "During the last 7 days, how much time did you spend sitting on a week day?",
+        "unit": "minute"
+    }, {
+        "answerData": "['Kosher diet']",
+        "questionId": "94423311424954368",
+        "title": "Do you follow any of the following cultural/ religious/personal dietary restrictions?（choose all that apply）",
+    }, {
+        "answerData": "[\"\"]",
+        "questionId": "94423317330534400",
+        "title": "Do you have any of the following food allergies?（choose all that apply）",
+    }]
+
+jichu_Remission_data2: [{
+        "answerData": 66,
+        "questionId": "94423189555257344",
+        "unit": "in",
+        "tipName": "height"
+    }, {
+        "answerData": "164.0",
+        "questionId": "94423193313353728",
+        "unit": "lb",
+        "tipName": "weight"
+    }, {
+        "answerData": "37.0",
+        "questionId": "94423198145191936",
+        "unit": "in",
+        "tipName": "waistline"
+    }, {
+        "answerData": "38.0",
+        "questionId": "94423202977030144",
+        "unit": "in",
+        "tipName": "hipline"
+    }, {
+        "answerData": "19",
+        "questionId": "94423207271997440",
+        "unit": "%",
+        "tipName": "body fat percentage"
+    }, {
+        "answerData": "120,89",
+        "questionId": "98601062621093888",
+        "unit": "mmHg",
+        "tipName": "systolic pressure,diastolic pressure"
+    }, {
+        "answerData": "79",
+        "questionId": "94423220156899328",
+        "unit": "bpm",
+        "tipName": "resting heart rate"
+    }, {
+        "questionId": "94423224451866624",
+        "answerData": 2022
+    }, {
+        "answerData": "150",
+        "questionId": "94423228209963008",
+        "unit": "mg/dL",
+        "tipName": "blood glucose"
+    }, {
+        "answerData": "200",
+        "questionId": "94423232504930304",
+        "unit": "mg/dL",
+        "tipName": "blood glucose"
+    }, {
+        "answerData": "8",
+        "questionId": "94423236799897600",
+        "unit": "%",
+        "tipName": "AIC"
+    }, {
+        "answerData": "[\"Novolog Insulin\"]",
+        "questionId": "94423240557993984"
+    }, {
+        "answerData": "Man",
+        "questionId": "94423245389832192"
+    },{
+        "answerData": "White",
+        "questionId": "94423250221670400"
+}]

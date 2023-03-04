@@ -1,0 +1,12 @@
+# 该yaml文件提供用户注册登录接口相关调用数据
+
+# 校验码接口
+getEncryptCode_url: "/pn/usercenter/common/getEncryptCode"
+# 登录接口
+login_url: "/pn/usercenter/patient/login/email"
+# 注册接口
+register_url: "/pn/usercenter/patient/register/email"
+
+# hc 用户登录注册接口
+hc_getEncryptCode_url: "/hc/usercenter/common/getEncryptCode"
+hc_login_email_url: "/hc/usercenter/hc/login/email"

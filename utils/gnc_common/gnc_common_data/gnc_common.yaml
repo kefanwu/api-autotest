@@ -1,0 +1,77 @@
+# gnc项目公共参数
+# 域名值域
+host_list: ["dev","pre","aws_test"]
+# 域名
+host_url:
+  dev: "https://ihospital-test.causacloud.com"
+  pre: "https://ihospital.causacloud.com"
+  aws_test: "https://hal-test.halhealthpilot.cf"
+# 请求header
+headers: {
+            'content-type': 'application/json;charset=UTF-8',
+            'Connection': 'close',
+            'Referer': "https://ihospital.causacloud.com",
+        }
+# 校验码接口
+getEncryptCode_url: "/pn/usercenter/common/getEncryptCode"
+# 登录接口
+login_url: "/pn/usercenter/patient/login/email"
+# 注册接口
+register_url: "/pn/usercenter/patient/register/email"
+
+# 餐段校验参数
+MealList: ["breakfasts","lunches","dinners"]
+# 打卡餐段对应
+Timing: {"BREAKFAST": "breakfasts","DINNER": "lunches","LUNCH": "dinners","SNACKS": ""}
+
+# 饮食打卡默认菜品参数
+foodList: [{
+        "dietRecipe": {
+            "id": null,
+            "foodId": "food_00054",
+            "foodName": "Fat-free (Skim) or Low-fat (1%), Milk, Buttermilk, Acidophilus Milk, Lactose-free Milk",
+            "imageUrl": "https://florencetest-n-1301038225.file.myqcloud.com/772773615542272-30729676719161351.jpg",
+            "courseRank": null,
+            "calories": 100,
+            "carbohydrate": 12,
+            "protein": 8,
+            "sugars": 0,
+            "fat": 2,
+            "noOfServing": 1,
+            "servingSize": "1",
+            "servingUnit": "cup",
+            "servingValue": 1,
+            "miniServingCount": 0.25,
+            "servingRange": [0.25, 10],
+            "allergens": null,
+            "ingredients": null,
+            "cookingInstruction": null,
+            "tip": null,
+        },
+        "eatenNoOfServing": 1
+    }, {
+        "dietRecipe": {
+            "id": null,
+            "foodId": "food_00615",
+            "foodName": "Baked Ziti with Vegetables",
+            "imageUrl": "https://florencetest-n-1301038225.file.myqcloud.com/772773615542272-30729676719161351.jpg",
+            "courseRank": null,
+            "calories": 286,
+            "carbohydrate": 42,
+            "protein": 16,
+            "sugars": 0,
+            "fat": 6,
+            "noOfServing": 2,
+            "servingSize": "2½",
+            "servingUnit": "cup",
+            "servingValue": 2.5,
+            "miniServingCount": 0.25,
+            "servingRange": [0.25, 10],
+            "allergens": null,
+            "ingredients": "2/3 cup uncooked ziti (about 2 ounces), 1 can (14 ounces) low-sodium tomatoes, drained (reserve 1/2 cup of the juice), 1/2 cup sliced carrots, 1 cup chopped broccoli, 1/2 cup diced green bell pepper, 1/4 cup sliced mushrooms, 2 garlic cloves, minced, 1 teaspoon dried basil, 1 teaspoon dried oregano, 1/2 teaspoon ground black pepper, 1/2 cup reduced-fat shredded mozzarella cheese, 1/2 cup grated Parmesan cheese",
+            "cookingInstruction": "Heat the oven to 375 F. Lightly coat a baking dish with cooking spray. Fill a large pot 3/4 full with water and bring to a boil. Add the pasta and cook until al dente (tender), 10 to 12 minutes, or according to the package directions. Drain the pasta thoroughly. In a nonstick frying pan over medium heat, add the reserved juice from the canned tomatoes. Stir in the carrots, broccoli and green pepper. Saute the vegetables until tender, about 5 minutes. Add the mushrooms and garlic and cook for another 5 minutes. Add the tomatoes, basil, oregano and black pepper to the vegetable mixture. Cook over low heat for 3 to 5 minutes. Transfer the cooked vegetables to a large bowl. Add the cooked pasta and shredded mozzarella cheese. Toss gently to mix. Spoon the mixture into the prepared baking dish. Sprinkle with the grated Parmesan cheese. Cover with aluminum foil and bake until the mixture is hot and bubbly, about 30 minutes. Remove the aluminum foil after 15 minutes. Divide the pasta among warmed individual bowls. Serve immediately.",
+            "tip": "For an alternative to spaghetti with meat sauce, try baked ziti, a tubular-shaped pasta dish, loaded with fresh vegetables. Serve with mixed-grain bread and a side of sliced strawberries and bananas. May also serve with other side dish of your taste.",
+        },
+        "eatenNoOfServing": 1
+    }
+]

@@ -1,0 +1,44 @@
+# 打卡公共参数（包含指标打卡，运动打卡，饮食打卡等）
+
+# 指标打卡接口
+medical_add_url: "/pn/aceso/pn/medical/add"
+
+# 传值对应解释
+medical_list: {
+    fastingmedical: {name: "空腹血糖",indicationType: 1,subType: 1,measureValueUnit: "mg/dL",measureValue: 121},
+    afterbreakfast: {name: "早餐后血糖",indicationType: 1,subType: 2,measureValueUnit: "mg/dL",measureValue: 140},
+    beforelunch: {name: "午餐前血糖",indicationType: 1,subType: 3,measureValueUnit: "mg/dL",measureValue: 121},
+    afterlunch: {name: "午餐后血糖",indicationType: 1,subType: 4,measureValueUnit: "mg/dL",measureValue: 140},
+    beforedinner: {name: "晚餐前血糖",indicationType: 1,subType: 5,measureValueUnit: "mg/dL",measureValue: 121},
+    afterdinner: {name: "晚餐后血糖",indicationType: 1,subType: 6,measureValueUnit: "mg/dL",measureValue: 140},
+    beforesleep: {name: "睡前血糖",indicationType: 1,subType: 7,measureValueUnit: "mg/dL",measureValue: 121},
+    3am: {name: "3AM血糖",indicationType: 1,subType: 8,measureValueUnit: "mg/dL",measureValue: 121},
+    weight: { name: "体重",indicationType: 2,measureValueUnit: "lb",measureValue: 168},
+    waistline: {name: "腰围",indicationType: 3,measureValueUnit: "in",measureValue: 37},
+    bloodpressure: {name: "血压",indicationType: 4,measureValueUnit: "mmHg",dbp: 86, sbp: 140},
+    haic: { name: "HAIC",indicationType: 5,measureValueUnit: "%",measureValue: 10},
+    tg: {name: "TG",indicationType: 6,measureValueUnit: "mg/dL",measureValue: 245},
+    tc: {name: "TC",indicationType: 7,measureValueUnit: "mg/dL",measureValue: 245},
+    ldl_c: {name: "LDL_C",indicationType: 8,measureValueUnit: "mg/dL",measureValue: 245},
+    hdl_c: {name: "HDL_C",indicationType: 9,measureValueUnit: "mg/dL",measureValue: 245},
+    sleep: { name: "睡眠",indicationType: 10,measureValueUnit: "h",measureValue: 8},
+
+}
+
+# 打卡参数
+Medical_data: {
+    "indicationType": ,
+    "measureTime": ,
+    "measureValue": ,
+    "recordType": 1,
+}
+
+# 按照指标type获取用户对应指标的所有打卡数据
+medical_list_url: "/pn/aceso/pn/medical/pageQuery"
+medical_list_data: {
+    pageNo: 1,
+    pageSize: 1000,
+    indicationType: 1,
+}
+# 删除指标打卡记录
+medical_delete_url: "/pn/aceso/pn/medical/delete"
