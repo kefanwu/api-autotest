@@ -1,7 +1,7 @@
 #项目简介  
 
 项目框架通过python+unittest+requests+Yaml+PyMysql+Utils工具类和数据驱动理念进行业务脚本的编写
-目录结果分为 如下
+目录结果分为如下
 
       data（数据层）  
       log（日志文件）  
