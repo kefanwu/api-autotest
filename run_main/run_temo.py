@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # file_name = get_report_file(report_path)
     # print(file_name)
     # new_report_file = report_path + "/" + file_name
-    # url = "http://test-report-florence.intra.yiducloud.cn/report/preview_ihospital_preview/{}".format(file_name)
+    # url = "".format(file_name)
     # print(url)
     #
     # # response = requests.get(url)
