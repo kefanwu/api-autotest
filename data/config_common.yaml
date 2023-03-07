@@ -39,6 +39,6 @@ yidudb_pre:
 
 
 #proxies:
-#   http: 'http://proxy-idc2.intra.yiducloud.cn:80'
-#   https: 'http://proxy-idc2.intra.yiducloud.cn:80'
+#   http: ''
+#   https: ''
 

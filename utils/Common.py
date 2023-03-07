@@ -23,7 +23,7 @@ class Login():
 
     def patient_login(self, user_name):
         """患者后台登录"""
-        login_url = '/puh3-t2dm/api/yz-roma-biz/login.controller.web.v1/login/doLogin'
+        login_url = ''
         headers = {'content-type': 'application/json;charset=UTF-8',
                    'TENANT': 'h1'
                    }
@@ -41,8 +41,8 @@ class Login():
 
     def patient_h5_login(self, phone):
         """患者H5登录"""
-        Code_url = '/puh3-t2dm/api/yz-roma-biz/login.controller.web.v1/login/getVerificationCode'
-        login_url = '/puh3-t2dm/api/yz-roma-biz/login.controller.web.v1/login/loginWithMobileAndCode'
+        Code_url = ''
+        login_url = ''
         headers = {'content-type': 'application/json;charset=UTF-8',
                    'TENANT': 'h1'
                    }
@@ -68,7 +68,7 @@ class Login():
     def app_login(self, app_phone):
         """app端登录"""
         # requests.adapters.DEFAULT_RETRIES = 5
-        url = "/patient/api/user/login/loginPatientWithMobile"
+        url = ""
         headers = {
             'content-type': 'application/json;charset=UTF-8',
         }
@@ -89,7 +89,7 @@ class Login():
     def borgesAdm_login(self, app_phone):
         """宁波线下管理中心后台登陆"""
         # requests.adapters.DEFAULT_RETRIES = 5
-        url = "/borgesAdm/usercenter/manage/login/mobile"
+        url = ""
         headers = {
             'content-type': 'application/json;charset=UTF-8',
         }
@@ -108,7 +108,7 @@ class Login():
 
     def ihospital_login(self, phone):
         """运营后台登录"""
-        # sso_url = 'http://proxy-auth.yiducloud.cn/sso/cookies'
+        # sso_url = ''
         # session = requests.session()
         # session.get(sso_url)
         session = self.web_session()
@@ -129,7 +129,7 @@ class Login():
         """集团安全web网关安全校验"""
         try:
             session = requests.session()
-            session.get("http://proxy-auth.yiducloud.cn/sso/cookies")
+            session.get("")
             session.close()
             print(session)
             return session
@@ -148,7 +148,7 @@ class Login():
         # print(web_url + login_url)
         # print(self.code)
         # 发起post请求
-        url = "https://ihospital-test.causacloud.com/borgesAdm/usercenter/manage/login/mobile"
+        url = ""
         try:
             session.post(url=url, json=post_data, headers=headers)
             session.close()
@@ -158,7 +158,7 @@ class Login():
 
     def patient_h5_login_new(self, phone):
         """患者H5登录"""
-        login_url = '/puh3-t2dm/api/yz-roma-biz/login.controller.web.v1/login/loginWithMobileAndCode'
+        login_url = ''
         headers = {'content-type': 'application/json;charset=UTF-8',
                    'TENANT': 'h1'
                    }

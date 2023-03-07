@@ -4,7 +4,7 @@ clock_record:
   method: POST
   headers:
     Content-Type: 'application/json'
-    referer: 'hal-test.halhealthpilot.cf'
+    referer: ''
   payload: {
     "pageNo": 0,
     "pageSize": 10,

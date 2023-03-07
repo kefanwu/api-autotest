@@ -128,8 +128,8 @@ class gnc_LoginOrRegister():
             exit()
 if __name__ == "__main__":
     settings = "pre"
-    host = "https://ihospital-test.causacloud.com"
-    headers = {'content-type': 'application/json;charset=UTF-8', 'Connection': 'close','Referer': "https://ihospital.causacloud.com",}
+    host = ""
+    headers = {'content-type': 'application/json;charset=UTF-8', 'Connection': 'close','Referer': "",}
     B = gnc_LoginOrRegister(settings, host, headers).GetEncryptCode()
     print(B)
 

@@ -58,6 +58,6 @@ def debugselectcasedata():
 
 
 def selectcaseinfo(caseid):
-    sqliteserver = MysqlConnect('172.31.6.23', 'root', '123456', 3306, 'autotestcase')
+    sqliteserver = MysqlConnect('', 'root', '123456', 3306, 'autotestcase')
     selectsql = 'select a.id, a.case_description, b.app_name,b.service_name,b.method_name from autotestcase_autotestcases a,autotestcase_applictionname b where  b.Id = a.applictionnameid_id and  a.id = ' + caseid + ';'
     sqliteserver.select_one(selectsql)

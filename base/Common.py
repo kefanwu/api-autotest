@@ -102,7 +102,7 @@ class Runn(object):
 
     def ihospital_login(self, phone):
         """运营后台登录"""
-        # sso_url = 'http://proxy-auth.yiducloud.cn/sso/cookies'
+        # sso_url = ''
         # session = requests.session()
         # session.get(sso_url)
         session = self.web_session()
@@ -124,7 +124,7 @@ class Runn(object):
         """集团安全web网关安全校验"""
         try:
             session = requests.session()
-            session.get("http://proxy-auth.yiducloud.cn/sso/cookies")
+            session.get("")
             session.close()
             print(session)
             return session
@@ -172,7 +172,7 @@ class Runn(object):
         # GNC管理后台登录
     def routines_app_login(self):
         """gnc_routines_app login"""
-        login_url = "https://hal-test.halhealthpilot.cf/routines/usercenter/user/mockLogin"
+        login_url = ""
         headers = {
             'content-type': 'application/json;charset=UTF-8',
         }

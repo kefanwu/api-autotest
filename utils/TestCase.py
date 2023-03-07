@@ -11,7 +11,7 @@ class Unittest(unittest.TestCase):
         print('=======++>this is demo', self.result)
         result = self.result.get('success')
         caseid = self.caseid
-        sqliteserver = MysqlConnect('172.31.6.23', 'root', '123456', 3306, 'autotestcase')
+        sqliteserver = MysqlConnect('', 'root', '123456', 3306, 'autotestcase')
         print('==========>当前执行的case状态是：', result)
         if result == True:
             #更新数据库状态成功

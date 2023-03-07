@@ -3,14 +3,14 @@
 host_list: ["dev","pre","aws_test"]
 # 域名
 host_url:
-  dev: "https://ihospital-test.causacloud.com"
-  pre: "https://ihospital.causacloud.com"
-  aws_test: "https://hal-test.halhealthpilot.cf"
+  dev: ""
+  pre: ""
+  aws_test: ""
 # 请求header
 headers: {
             'content-type': 'application/json;charset=UTF-8',
             'Connection': 'close',
-            'Referer': "https://ihospital.causacloud.com",
+            'Referer': "",
         }
 # 校验码接口
 getEncryptCode_url: "/pn/usercenter/common/getEncryptCode"
@@ -30,7 +30,7 @@ foodList: [{
             "id": null,
             "foodId": "food_00054",
             "foodName": "Fat-free (Skim) or Low-fat (1%), Milk, Buttermilk, Acidophilus Milk, Lactose-free Milk",
-            "imageUrl": "https://florencetest-n-1301038225.file.myqcloud.com/772773615542272-30729676719161351.jpg",
+            "imageUrl": "",
             "courseRank": null,
             "calories": 100,
             "carbohydrate": 12,
@@ -54,7 +54,7 @@ foodList: [{
             "id": null,
             "foodId": "food_00615",
             "foodName": "Baked Ziti with Vegetables",
-            "imageUrl": "https://florencetest-n-1301038225.file.myqcloud.com/772773615542272-30729676719161351.jpg",
+            "imageUrl": "351.jpg",
             "courseRank": null,
             "calories": 286,
             "carbohydrate": 42,
